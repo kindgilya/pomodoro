@@ -1,1 +1,1 @@
-# pomodoro
+# Yet Another Ordinary Pomodoro App HTML/CSS/JS
