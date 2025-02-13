@@ -10,18 +10,20 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
      />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
     <title>Pomodoro</title>
 </head>
 <body>
     <div class="root">
-        <div class="container">
             <div class="tasks-list">
                 <div class="tasks-list__top">
                     <h3 class="tasks-list__title">Tasks List <span class="tasks-list__quality">(0 tasks)</span></h3>
                     <div class="mini-search">
-                        <button class="btn btn--search" data-element="search"><i class="fa-solid fa-search"></i></button>
+                        <button class="btn btn--search"><i class="fa-solid fa-search"></i></button>
                         <!-- <div class="mini-search__form-wrapper mini-search__form-wrapper--active" >
                           <form class="mini-search-form" action="#" method="post" >
                             <input class="mini-search-form__field" type="text" placeholder="write yout task..." />
@@ -31,13 +33,24 @@
                 </div>
                 <div class="tasks-list__wrapper">
                     <div class="task">
-                        
+                        <input class="task__status" type="checkbox" >
+                        <img class="task__img" src="#" alt="" >
+                        <div class="task__wrapper">
+                            <span class="task__title">Morning exercise</span>
+                            <span class="task__status">Session: <span class="task__quantity">1/2</span></span>
+                        </div>
+                        <span class="task__time">At 06:30</span>
                     </div>
+                    <button class="btn btn--add">
+                        <i class="fa-solid fa-circle-up"></i>
+                        <span>Add Task</span>
+                    </button>
                 </div>
             </div>
-            <div class="daily-progress"></div>
-            <div class="timer"></div>
-        </div>
+            <div class="container">
+                <div class="daily-progress"></div>
+                <div class="timer"></div>
+            </div>
     </div>
     <script src="script.js"></script>
 </body>
