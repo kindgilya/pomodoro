@@ -6,7 +6,9 @@
     // <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name
   } */
-
+body{
+    background-color: #151736;
+}
 .root{
     width: 100%;
     max-width: 1280px;
@@ -24,7 +26,8 @@
 
 .tasks-list{
     width: 300px;
-    background-color: #c51b1b;
+    background-color: #ffffff;
+    opacity: 0.6;
     text-align: center;
     border-radius: 15px;
 }
@@ -34,18 +37,27 @@
     justify-content: space-between;
     padding: 10px 10px;
 }
+.tasks-list__wrapper{
+    margin: 10px 10px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 
 .daily-progress{
     width: 150px;
     height: 150px;
-    background-color: #261bc5;
+    background-color: #afaeb6;
     margin-bottom: 10px;
 }
 
 .timer{
     width: 150px;
     height: 150px;
-    background-color: #8f1bc5 
+    background-color: #afaeb6;
 }
