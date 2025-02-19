@@ -10,6 +10,7 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
      />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -32,9 +33,48 @@
                     </div>
                 </div>
                 <div class="tasks-list__wrapper">
-                    <div class="task">
-                        <input class="task__status" type="checkbox" >
-                        <img class="task__img" src="#" alt="" >
+                    <div class="task task__tasks-list">
+                        <div class="pretty p-icon p-round p-smooth task__done-wrapper">
+                            <input class="task__done" type="checkbox" />
+                            <div class="state p-success">
+                                <i class="fa-solid fa-check icon mdi mdi-check"></i>
+                                <label></label>
+                            </div>
+                        </div>
+                        <!-- <img class="task__img" src="#" alt="" > -->
+                        <i class="task__icon fa-solid fa-gamepad"></i>
+                        <div class="task__wrapper">
+                            <span class="task__title">Morning exercise</span>
+                            <span class="task__status">Session: <span class="task__quantity">1/2</span></span>
+                        </div>
+                        <span class="task__time">At 06:30</span>
+                    </div>
+                    <div class="task task__tasks-list">
+                        <div class="pretty p-icon p-round p-smooth task__done-wrapper">
+                            <input class="task__done" type="checkbox" />
+                            <div class="state p-success">
+                                <i class="fa-solid fa-check icon mdi mdi-check"></i>
+                                <label></label>
+                            </div>
+                        </div>
+                        <!-- <img class="task__img" src="#" alt="" > -->
+                        <i class="task__icon fa-solid fa-gamepad"></i>
+                        <div class="task__wrapper">
+                            <span class="task__title">Morning exercise</span>
+                            <span class="task__status">Session: <span class="task__quantity">1/2</span></span>
+                        </div>
+                        <span class="task__time">At 06:30</span>
+                    </div>
+                    <div class="task task__tasks-list">
+                        <div class="pretty p-icon p-round p-smooth task__done-wrapper">
+                            <input class="task__done" type="checkbox" />
+                            <div class="state p-success">
+                                <i class="fa-solid fa-check icon mdi mdi-check"></i>
+                                <label></label>
+                            </div>
+                        </div>
+                        <!-- <img class="task__img" src="#" alt="" > -->
+                        <i class="task__icon fa-solid fa-gamepad"></i>
                         <div class="task__wrapper">
                             <span class="task__title">Morning exercise</span>
                             <span class="task__status">Session: <span class="task__quantity">1/2</span></span>
@@ -42,7 +82,7 @@
                         <span class="task__time">At 06:30</span>
                     </div>
                     <button class="btn btn--add">
-                        <i class="fa-solid fa-circle-up"></i>
+                        <i class="fa-solid fa-circle-up add-icon"></i>
                         <span>Add Task</span>
                     </button>
                 </div>

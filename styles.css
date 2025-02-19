@@ -25,7 +25,7 @@ body{
 
 
 .tasks-list{
-    width: 300px;
+    width: 250px;
     background-color: #ffffff;
     opacity: 0.6;
     text-align: center;
@@ -35,7 +35,8 @@ body{
 .tasks-list__top{
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px;
+    align-items: center;
+    padding: 15px 15px;
 }
 .tasks-list__wrapper{
     margin: 10px 10px;
@@ -45,9 +46,49 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 12px;
 }
 
+.task__tasks-list{
+    margin: 10px 0px;
+    padding: 10px;
+}
 
+.task__done-wrapper{
+   margin-left: 0;
+}
+
+.task__icon{
+    font-size: 16px;
+    color: #234e31be;
+}
+.add-icon{
+    color: #240e2cbe;
+}
+
+.task__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.task__title{
+    font-weight: 700;
+}
+
+.task__status{
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.task__quantity{
+    color: #240e2cbe;
+}
+
+.task__time{
+    font-size: 10px;
+}
 
 .daily-progress{
     width: 150px;
