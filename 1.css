@@ -1,0 +1,134 @@
+/* Основные стили компонента */
+.tabs {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 25px;
+    max-width: 500px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Панель управления вкладками */
+  .tabs__control {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  /* Кнопки вкладок */
+  .btn {
+    flex: 1;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #f5f5f5;
+    color: #666;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .btn--ongoing.active,
+  .btn--break.active {
+    background: #240e2cbe;
+    color: white;
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(36,14,44,0.1);
+  }
+  
+  /* Контент вкладок */
+  .tabs__content {
+    position: relative;
+    min-height: 200px;
+  }
+  
+  .tabs__content > div {
+    display: none;
+  }
+  
+  .tabs__content > div.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Таймер */
+  .tabs__time {
+    color: #240e2cbe;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Прогресс-бар */
+  .horizontal-progress {
+    margin: 25px 0;
+  }
+  
+  /* Блок текущей задачи */
+  .actual-task {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .task__icon {
+    color: #240e2cbe;
+    font-size: 24px;
+  }
+  
+  .task__title {
+    font-weight: 600;
+    color: #333;
+    flex-grow: 1;
+  }
+  
+  .task__status {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .task__quantity {
+    color: #240e2cbe;
+    font-weight: 600;
+  }
+  
+  /* Панель управления таймером */
+  .buttons__wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+  }
+  
+  .btn--restart,
+  .btn--forward {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 0;
+  }
+  
+  .btn--stop {
+    padding: 12px 25px;
+    background: #ff4757;
+    color: white;
+  }
+  

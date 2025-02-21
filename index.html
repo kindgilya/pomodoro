@@ -109,7 +109,56 @@
                         </div>
                       </div>
                 </div>
-                <div class="timer"></div>
+                    <div class="tabs">
+                        <div class="tabs__control">
+                            <button class="btn btn--ongoing">
+                                <i class="fa-solid fa-clock"></i>
+                                <span>Ongoing</span>
+                            </button>
+                            <button class="btn btn--break">
+                                <i class="fa-solid fa-mug-saucer"></i>
+                                <span>Break</span>
+                            </button>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__content-ongoing">
+                                <h3 class="tabs__time">12:10</h3>
+                                <div class="horizontal-progress">
+                                    <progress class="horizontal-progress__bar" value="50" max="100"></progress>
+                                    <div class="horizontal-progress__text">50%</div>
+                                </div>
+                                <div class="actual-task">
+                                    <i class="task__icon fa-solid fa-gamepad"></i>
+                                    <span class="task__title">Morning exercise</span>
+                                    <span class="task__status">Session: <span class="task__quantity">1/2</span></span>
+                                </div>
+                            </div>
+                            <div class="tabs__content-break">
+                                <h3 class="tabs__time">12:10</h3>
+                                <div class="horizontal-progress">
+                                    <progress class="horizontal-progress__bar" value="50" max="100"></progress>
+                                    <div class="horizontal-progress__text">50%</div>
+                                </div>
+                                <div class="actual-task">
+                                    <i class="task__icon fa-solid fa-gamepad"></i>
+                                    <span class="task__title">Morning exercise</span>
+                                    <span class="task__status">Session: <span class="task__quantity">1/2</span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons__wrapper">
+                            <button class="btn btn--restart">
+                                <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                            </button>
+                            <button class="btn btn--stop">
+                                <i class="fa-solid fa-stop"></i>
+                                <span>Stop</span>
+                            </button>
+                            <button class="btn btn--forward">
+                                <i class="fa-solid fa-forward"></i>
+                            </button>
+                        </div>
+                    </div>
             </div>
     </div>
     <script src="script.js"></script>
